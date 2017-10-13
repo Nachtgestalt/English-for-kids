@@ -1,0 +1,65 @@
+body{
+	background-color: #fff;
+}
+
+form {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5rem;
+	width: 500px;
+	margin: 1em auto 0 auto;
+	padding: 1em 2em 1em 2em;
+	background: #FAFFFD;
+	border: 2px solid #0E0404;
+	box-shadow: rgb(0, 0, 0) 0px 1px 1px 0px,rgb(0, 0, 0) 0px 1px 2px 0px;
+	color: #00A7E1;
+}
+
+h1{
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	padding: 0;
+	margin: 0;
+}
+
+h2{
+	color: #FFB238;
+	font-size: 3.5rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+a{
+	margin: .5em 38%;
+	text-decoration: none;
+	color: #9FD356;
+}
+
+a:hover{
+	color: #00A7E1
+}
+
+hr{
+	height: 2px;
+	background: #9FD356;
+}
+
+.top-30{
+	margin-top: 50px;
+}
+
+.btn-login{
+	cursor: pointer;
+	background-color: #9FD356;
+	border-color: #9FD356;
+	width: 100%;
+	margin: 1rem 0;
+	font-size: 1.5rem;
+}
+
+.btn-login:hover{
+	background-color: #FAFFFD;
+	border-color: #9FD356;
+	color: #9FD356;
+}
