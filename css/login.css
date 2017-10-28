@@ -36,6 +36,12 @@ a{
 	color: #9FD356;
 }
 
+.a-iniciar-sesion{
+	margin: .5em 32%;
+	text-decoration: none;
+	color: #9FD356;
+}
+
 a:hover{
 	color: #00A7E1
 }
