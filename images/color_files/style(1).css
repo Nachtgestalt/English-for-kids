@@ -1,0 +1,182 @@
+/*
+Theme Name: Kiddy
+Theme URI: http://kiddy.creaws.com/
+Author: Creative Web Solutions
+Author URI: http://themeforest.net/user/creativews
+Description: Premium Children WordPress theme
+Version: 1.0.1
+License: GNU General Public License version 3.0 & Envato Regular/Extended License
+License URI:  http://www.gnu.org/licenses/gpl-3.0.html & http://themeforest.net/licenses
+Tags: blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, featured-images, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: kiddy
+
+*/ 
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+.img_right_sep{
+margin-left:20px;
+}
+
+.w400{
+width:400px;
+}
+
+.wm50{
+max-width:50%!important;
+}
+
+.left_post_due{
+float:left;
+margin-right:10px!important;
+}
+
+.left_post_due_2{
+float:left;
+margin-right:0px!important;
+width:80px;
+}
+
+.right_post_due_2{
+float:left;
+margin-right:0px!important;
+width:70%;
+width: -moz-calc(100% - 80px);
+width: -webkit-calc(100% - 80px);
+width: -o-calc(100% - 80px);
+width: calc(100% - 80px);
+line-height:120%;
+font-size:17px,
+}
+
+.no_bottom{margin-bottom:0px!important;}
+
+h3.ce_title{
+font-size:40px!important;
+}
+
+.azul, .right_post_due_2 a{ color:#26b4d7;}
+
+.no_float{ clear:both;}
+
+.fichas{
+float:left;
+width:150px;
+height:240px;
+margin-right:20px;
+margin-bottom:20px;
+background-color:#f9be0a;
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+border-radius:7px;
+border:1px solid #fd8e00;
+text-align:center;
+}
+	
+.fichas:hover{
+background-color:#26b4d7;
+}
+	
+.fichas img{
+width:130px;
+height:100px;
+margin-top:10px;
+}
+
+.enl_fichas{
+color:#fff;
+font-size:18px;
+font-weight:bold;
+margin:10px;
+}
+
+.azul{color:#26b4d7;}
+
+.descripcion_ficha{
+font-size:24px;
+}
+
+.pdf_fichas{
+padding-right:20px;
+text-align:right;
+}
+
+.vmiddle{
+vertical-align:middle!important;
+}
+
+.webcam{
+float:left;
+margin-left:40px;
+margin-right:40px;
+margin-bottom:20px;
+text-align:center;
+}
+
+.form-group{
+text-align:left;
+margin-bottom:20px;
+}
+
+.col_1_fichas{
+float:left;
+width:70%;
+}
+
+.col_2_fichas{
+float:left;
+width:25%;
+width: -moz-calc(30% - 25px);
+width: -webkit-calc(30% - 25px);
+width: -o-calc(30% - 25px);
+width: calc(30% - 25px);
+margin-left:25px;
+}
+
+.mapa_borde{
+width:90%!important;
+width: -moz-calc(100% - 34px)!important;
+width: -webkit-calc(100% - 34px)!important;
+width: -o-calc(100% - 34px)!important;
+width: calc(100% - 34px)!important;
+border:12px solid #56a8ff;
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+padding:5px;
+}
+
+@media screen and (max-width: 767px){
+	.page_content>.container>* {
+	width: 100% !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	}
+	
+	aside{ width:100%!important;}
+	
+	.col_1_fichas{
+	width:100%;
+	}
+	
+	.col_2_fichas{
+	width:100%;
+	margin-top:30px;
+	margin-left:0;
+	}
+}
+
+@media (max-width: 700px) {
+	.ocul_600{
+	display:none;
+	}
+	
+	.fichas{
+	height:140px;
+	}
+	
+	.descripcion_ficha{
+	font-size:20px;
+	}	
+}

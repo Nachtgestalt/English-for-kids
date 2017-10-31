@@ -1,40 +1,39 @@
 <?php
-if(!isset($_POST["correo"])){	
+if(!isset($_POST["email"])){	
 	$mensaje="Ingresa tu correo";
 	//echo $mensaje;
 }else{
 
-	$var1=trim($_POST["correo"]);
-	$var3=trim($_POST["usr"]);
-	$var4=trim($_POST["con1"]);
-	$var5=trim($_POST["con2"]);
+	$var1=trim($_POST["username"]);
+	$var3=trim($_POST["email"]);
+	$var4=trim($_POST["pass"]);
+	$var5=trim($_POST["birthday"]);
 
 	//validacion correo, que aun no este 
 	//validacion contrase�a igual	
 
-	$id_con=mysqli_connect("sql206.unaux.com","unaux_20547926","greatenglish","unaux_20547926_reg");
+	$id_con=mysqli_connect("127.0.0.1:3308", "root", "root", "english_for_kids");
 
-	$sql="select correo from base where correo=\"$var1\"";
+	$sql="select email from usuario where email=\"$var3\"";
 	$res=mysqli_query($id_con,$sql);//la concatenacion en variable no lleva puntos
 
 	if(mysqli_num_rows($res)==0){
-			if(strcmp($var4,$var5)==0){
-				//$sql="select nombre from alumno where alumno.nombre=\"$var1\" and alumno.clave=\"$var2\"";
-				$sql="insert into base values(\"$var1\",\"$var4\",\"$var3\",0)";
-				$res=mysqli_query($id_con,$sql);//la concatenacion en variable no lleva puntos
-				
-				echo "Redireccionar  ;P";
-				$mensaje="Claro registrado ;P";
-				
-				$dir= "index.php";
-				header("Location: $dir");
-		
-			}else{
-			$mensaje="Tu clave no coincide ;p, vuelve a intentarlo";
-			echo "alert(\"No tu clave no coincide\")";
-			}
-		
-	}else{
+            //$sql="select nombre from alumno where alumno.nombre=\"$var1\" and alumno.clave=\"$var2\"";
+            $sql="insert into usuario(`email`,`password`,`username`,`birthday`) values(\"$var3\",\"$var4\",\"$var1\",'asd')";
+            if ($id_con->query($sql) === TRUE) {
+                echo "New record created successfully";
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+            // $sql="insert into usuario values(\"$var3\",\"$var4\",\"$var1\",'asd')";
+            // $res=mysqli_query($id_con,$sql);//la concatenacion en variable no lleva puntos
+            
+            echo "Redireccionar  ;P";
+            $mensaje="Claro registrado ;P";
+            
+            $dir= "index.php";
+            header("Location: $dir");
+	} else {
 	$mensaje="No puedes utilizar ese correo ya esta registrado";
 	echo $mensaje;
 	}
@@ -60,19 +59,19 @@ if(!isset($_POST["correo"])){
               <div class="form-group">
                   <h2>Registro</h2>
                   <hr>
-                  <label for="email">Username</label>
+                  <label for="username">Username</label>
                   <input type="text" class="form-control" id="usuario" name="username" placeholder="Ingresa tu nombre de usuario">
               </div>
 			  <div class="form-group">
-                  <label for="formGroupExampleInput2">E-mail</label>
+                  <label for="email">E-mail</label>
                   <input type="text" class="form-control" id="correo" name="email" placeholder="Ingresa tu correo">
               </div>
               <div class="form-group">
-                  <label for="formGroupExampleInput2">Password</label>
+                  <label for="pass">Password</label>
                   <input type="text" class="form-control" id="clave" name="pass" placeholder="Ingresa tu contraseña">
               </div>
 			  <div class="form-group">
-                  <label for="formGroupExampleInput2">Birthday date</label>
+                  <label for="fechaNacimiento">Birthday date</label>
                   <input type="date" class="form-control" id="fechaNacimiento" name="birthday" placeholder="Ingresa tu fecha de nacimiento">
               </div>
               <div class="form-group">
