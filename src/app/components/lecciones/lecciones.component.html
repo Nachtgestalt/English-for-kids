@@ -1,0 +1,19 @@
+<div class="content container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="list-group">
+        <a [routerLink]="['/home/lecciones/animales']" class="list-group-item list-group-item-action">1. Animales</a>	
+        <a [routerLink]="['/home/lecciones/colores']" class="list-group-item list-group-item-action list-group-item-primary">2. Colores</a>
+        <a [routerLink]="['/home/lecciones/numeros']" class="list-group-item list-group-item-action list-group-item-secondary">3. Numeros</a>
+        <a [routerLink]="['/home/lecciones/abecedario']" class="list-group-item list-group-item-action list-group-item-success">4. Abecedario</a>
+        <a [routerLink]="['/home/lecciones/saludos']" class="list-group-item list-group-item-action list-group-item-danger">5. Saludos/despedidas</a>
+        <a [routerLink]="['/home/lecciones/cuerpo']" class="list-group-item list-group-item-action list-group-item-warning">6. Partes del cuerpo</a>
+        <a [routerLink]="['/home/lecciones/casa']" class="list-group-item list-group-item-action list-group-item-info">7. Partes de una casa</a>
+        <a [routerLink]="['/home/lecciones/comidas']" class="list-group-item list-group-item-action list-group-item-light">8. Comidas</a>
+      </div>
+    </div>
+    <div class="col-6 col-md-8">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
