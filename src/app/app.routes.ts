@@ -5,6 +5,7 @@ import { LeccionesComponent } from './components/lecciones/lecciones.component'
 
 import { HOME_ROUTES } from './components/home/home.routes';
 import { LECCIONES_ROUTES } from './components/lecciones/lecciones.routes'
+import { VIDEOS_ROUTES } from './components/videos/videos.routes'
 
 const APP_ROUTES: Routes = [
     // { path: 'lecciones',

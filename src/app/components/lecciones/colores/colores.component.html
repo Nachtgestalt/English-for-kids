@@ -1,125 +1,136 @@
 <div id="aside"><span class="first">LECCION 2 "COLORES"</span>
-  <p>&nbsp;</p>
+  <hr>
   <div>
     <div>
-      <div onclick="javascript:repTds(7,'Spider,Whale,Horse,Pig,Deer,Rabbit,Dolphin,Elephant,Seal,Hen,Cock,Cat,Gorilla,Hamster,Ant',2)">
-        <p>&nbsp;</p>
-        <div>
-          <div><br>
-            <a>Colors</a> <br>
-            Colores</div>
-          <div></div>
-          </div>
-        <br>
+      <div>
         <div>
           <div>
-            <table>
-              <tbody>
+            <table class="table table-bordered">
+              <thead class="thead-dark">
                 <tr>
                   <th></th>
                   <th>Word</th>
                   <th>Translation</th>
+                  <th>Sound</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="black"></td>
+                  <td> Black</td>
+                  <td> Negro</td>
+                  <td> 
+                    <div class="mx-auto" style="width: 50px;">
+                      <button class="text-center" (click)="color_sound('black')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                      </button> 
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blue"></td>
+                  <td> Blue</td>
+                  <td> Azul</td>
+                  <td> 
+                    <div class="mx-auto" style="width: 50px;">
+                      <button class="text-center" (click)="color_sound('blue')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                      </button> 
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="brown"></td>
+                  <td> Brown</td>
+                  <td> Marrón</td>
+                  <td> 
+                    <div class="mx-auto" style="width: 50px;">
+                      <button class="text-center" (click)="color_sound('brown')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                      </button> 
+                    </div>
+                  </td>
                   </tr>
                 <tr>
-                  <td></td>
-                  <td> beige</td>
-                  <td>beige</td>
+                  <td class="green"></td>
+                  <td> Green</td>
+                  <td> Verde</td>
+                  <td> 
+                    <div class="mx-auto" style="width: 50px;">
+                      <button class="text-center" (click)="color_sound('green')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                      </button> 
+                    </div>
+                  </td>
                   </tr>
                 <tr>
-                  <td></td>
-                  <td> black</td>
-                  <td>negro</td>
+                  <td class="gray"></td>
+                  <td> Gray </td>
+                  <td> Gris</td>
+                  <td> 
+                    <div class="mx-auto" style="width: 50px;">
+                      <button class="text-center" (click)="color_sound('gray')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                      </button> 
+                    </div>
+                  </td>
                   </tr>
                 <tr>
-                  <td></td>
-                  <td> blue</td>
-                  <td>azul</td>
+                  <td class="orange"></td>
+                  <td> Orange</td>
+                  <td> Naranja</td>
+                  <td> 
+                    <div class="mx-auto" style="width: 50px;">
+                      <button class="text-center" (click)="color_sound('orange')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                      </button> 
+                    </div>
+                  </td>
                   </tr>
                 <tr>
-                  <td></td>
-                  <td> brown</td>
-                  <td>marrón</td>
+                  <td class="pink"></td>
+                  <td> Pink </td>
+                  <td> Rosa </td>
+                  <td> 
+                    <div class="mx-auto" style="width: 50px;">
+                      <button class="text-center" (click)="color_sound('pink')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                      </button> 
+                    </div>
+                  </td>
                   </tr>
                 <tr>
-                  <td></td>
-                  <td> clear</td>
-                  <td>transparente</td>
+                  <td class="purple"></td>
+                  <td> Purple</td>
+                  <td> Púrpura</td>
+                  <td> 
+                    <div class="mx-auto" style="width: 50px;">
+                      <button class="text-center" (click)="color_sound('purple')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                      </button> 
+                    </div>
+                  </td>
                   </tr>
                 <tr>
-                  <td></td>
-                  <td> fuchsia</td>
-                  <td>fucsia</td>
+                  <td class="red"></td>
+                  <td> Red</td>
+                  <td> Rojo</td>
+                  <td> 
+                    <div class="mx-auto" style="width: 50px;">
+                      <button class="text-center" (click)="color_sound('red')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                      </button> 
+                    </div>
+                  </td>
                   </tr>
                 <tr>
-                  <td></td>
-                  <td> golden</td>
-                  <td>dorado</td>
-                  </tr>
-                <tr>
-                  <td></td>
-                  <td> green</td>
-                  <td>verde</td>
-                  </tr>
-                <tr>
-                  <td></td>
-                  <td> grey UK/ gray US</td>
-                  <td>gris</td>
-                  </tr>
-                <tr>
-                  <td></td>
-                  <td> maroon</td>
-                  <td>granate</td>
-                  </tr>
-                <tr>
-                  <td></td>
-                  <td> orange</td>
-                  <td>naranja</td>
-                  </tr>
-                <tr>
-                  <td></td>
-                  <td> pink</td>
-                  <td>rosa</td>
-                  </tr>
-                <tr>
-                  <td></td>
-                  <td> purple</td>
-                  <td>púrpura</td>
-                  </tr>
-                <tr>
-                  <td></td>
-                  <td> red</td>
-                  <td>rojo</td>
-                  </tr>
-                <tr>
-                  <td></td>
-                  <td> silver</td>
-                  <td>plateado</td>
-                  </tr>
-                <tr>
-                  <td></td>
-                  <td> teal</td>
-                  <td>verde azulado</td>
-                  </tr>
-                <tr>
-                  <td></td>
-                  <td> turquoise</td>
-                  <td>turquesa</td>
-                  </tr>
-                <tr>
-                  <td></td>
-                  <td> violet</td>
-                  <td>violeta</td>
-                  </tr>
-                <tr>
-                  <td></td>
+                  <td class="white"></td>
                   <td> white</td>
                   <td>blanco</td>
                   </tr>
                 <tr>
-                  <td></td>
-                  <td> yellow</td>
-                  <td>amarillo</td>
-                  </tr>
+                  <td class="yellow"></td>
+                  <td> Yellow </td>
+                  <td> Amarillo </td>
+                  <td> 
+                    <div class="mx-auto" style="width: 50px;">
+                      <button class="text-center" (click)="color_sound('yellow')">
+                        <i class="fa fa-volume-up" aria-hidden="true"></i>
+                      </button> 
+                    </div>
+                  </td>
+                </tr>
                 </tbody>
               </table>
             </div>

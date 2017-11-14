@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //Rutas
 import { APP_ROUTING } from './app.routes'
@@ -21,6 +22,22 @@ import { SaludosComponent } from './components/lecciones/saludos/saludos.compone
 import { CuerpoComponent } from './components/lecciones/cuerpo/cuerpo.component';
 import { CasaComponent } from './components/lecciones/casa/casa.component';
 import { ComidaComponent } from './components/lecciones/comida/comida.component';
+import { VideosAnimalesComponent } from './components/videos/videos-animales/videos-animales.component';
+import { VideosColoresComponent } from './components/videos/videos-colores/videos-colores.component';
+import { VideosNumerosComponent } from './components/videos/videos-numeros/videos-numeros.component';
+import { VideosAbecedarioComponent } from './components/videos/videos-abecedario/videos-abecedario.component';
+import { VideosSaludosComponent } from './components/videos/videos-saludos/videos-saludos.component';
+import { VideosCuerpoComponent } from './components/videos/videos-cuerpo/videos-cuerpo.component';
+import { VideosCasaComponent } from './components/videos/videos-casa/videos-casa.component';
+import { VideosComidasComponent } from './components/videos/videos-comidas/videos-comidas.component';
+import { ActividadesAnimalesComponent } from './components/actividades/actividades-animales/actividades-animales.component';
+import { ActividadesColoresComponent } from './components/actividades/actividades-colores/actividades-colores.component';
+import { ActividadesNumerosComponent } from './components/actividades/actividades-numeros/actividades-numeros.component';
+import { ActividadesAbecedarioComponent } from './components/actividades/actividades-abecedario/actividades-abecedario.component';
+import { ActividadesSaludosComponent } from './components/actividades/actividades-saludos/actividades-saludos.component';
+import { ActividadesCuerpoComponent } from './components/actividades/actividades-cuerpo/actividades-cuerpo.component';
+import { ActividadesCasaComponent } from './components/actividades/actividades-casa/actividades-casa.component';
+import { ActividadesComidasComponent } from './components/actividades/actividades-comidas/actividades-comidas.component';
 
 @NgModule({
   declarations: [
@@ -40,11 +57,30 @@ import { ComidaComponent } from './components/lecciones/comida/comida.component'
     SaludosComponent,
     CuerpoComponent,
     CasaComponent,
-    ComidaComponent
+    ComidaComponent,
+    VideosAnimalesComponent,
+    VideosColoresComponent,
+    VideosNumerosComponent,
+    VideosAbecedarioComponent,
+    VideosSaludosComponent,
+    VideosCuerpoComponent,
+    VideosCasaComponent,
+    VideosComidasComponent,
+    ActividadesAnimalesComponent,
+    ActividadesColoresComponent,
+    ActividadesNumerosComponent,
+    ActividadesAbecedarioComponent,
+    ActividadesSaludosComponent,
+    ActividadesCuerpoComponent,
+    ActividadesCasaComponent,
+    ActividadesComidasComponent
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

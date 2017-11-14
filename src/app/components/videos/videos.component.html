@@ -1,42 +1,20 @@
-<div class="content">
-  <div id="blog">
-    <div class="sidebar">
-      <h2>Lecciones</h2>
-      <h3 class="first"><a href="index.html">2017</a></h3>
-      <div>
-        <p><a href="services.html">Animales</a></p>
-                  <p><a href="index.html">Colores</a></p>
-                  <p><a href="index.html">Numeros</a></p>
-                  <p><a href="index.html">Abecedario</a></p>
-                  <p><a href="index.html">Saludos, despedidad</a></p>
-                  <p><a href="index.html">Cuerpo humano</a></p>
-                  <p><a href="index.html">Hogar</a></p>
-                  <p><a href="index.html">Presentacion personal</a></p>
-                  <p><a href="index.html">Comidas</a></p>
-                  <p><a href="index.html">Salon de clases</a></p>
+<div class="content container-fluid">
+  <div class="row">
+    <div class="col-2 col-md-2">
+        <p class="msg-lista text-center">¿Que quieres aprender hoy?</p>
+      <div class="list-group">
+        <a [routerLink]="['/home/videos/animales']" class="list-group-item list-group-item-action">1. Animales</a>	
+        <a [routerLink]="['/home/videos/colores']" class="list-group-item list-group-item-action list-group-item-primary">2. Colores</a>
+        <a [routerLink]="['/home/videos/numeros']" class="list-group-item list-group-item-action list-group-item-secondary">3. Numeros</a>
+        <a [routerLink]="['/home/videos/abecedario']" class="list-group-item list-group-item-action list-group-item-success">4. Abecedario</a>
+        <a [routerLink]="['/home/videos/saludos']" class="list-group-item list-group-item-action list-group-item-danger">5. Saludos/despedidas</a>
+        <a [routerLink]="['/home/videos/cuerpo']" class="list-group-item list-group-item-action list-group-item-warning">6. Partes del cuerpo</a>
+        <a [routerLink]="['/home/videos/casa']" class="list-group-item list-group-item-action list-group-item-info">7. Partes de una casa</a>
+        <a [routerLink]="['/home/videos/comidas']" class="list-group-item list-group-item-action list-group-item-light">8. Comidas</a>
       </div>
     </div>
-    <div class="article">
-      <ul>
-        <li class="first">
-            <div class="section">
-              <a href="index.html"><img src="../../../assets/images/YOUTUBE.png" alt="Image" /></a><a href="https://www.youtube.com/channel/UCdt8Maq3DVgcIkE6zgn6iRw">Baby Nenes</a>
-            </div>
-            <div>
-              <h1><a href="index.html">ANIMALES</a></h1>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/3mtxh6g4Nd0" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </li>
-        <li>
-          <div class="section">
-            <a href="index.html"><img src="../../../assets/images/YOUTUBE.png" alt="Image" /></a><a href="https://www.youtube.com/channel/UCltsIEpJn4MdFqqSCVilMYg">123dialogues2</a><br>
-          </div>
-          <div>
-            <h1><a href="index.html">ANIMALES2</a></h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GvUEjlfXJPQ" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </li>
-      </ul>
+    <div class="col-10 col-md-10">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

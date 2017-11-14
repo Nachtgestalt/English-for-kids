@@ -1,87 +1,134 @@
-<div id="aside"><span class="first">LECCION 5 "SALUDOS Y DESPEDIDAS"</span>
-  <p>&nbsp;</p>
+<div id="aside">
+  <span class="first">LECCION 5 "SALUDOS Y DESPEDIDAS"</span>
+  <hr>
+  <span class="first">Los saludos</span>
   <div>
     <div>
-      <div onclick="javascript:repTds(7,'Spider,Whale,Horse,Pig,Deer,Rabbit,Dolphin,Elephant,Seal,Hen,Cock,Cat,Gorilla,Hamster,Ant',2)">
-        <p><br>
-              </p>
-        <h3>Los saludos en Inglés</h3>
-        <table>
+      <table class="table table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th >Español</th>
+            <th >Inglés</th>
+            <th >Sonido</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hola</td>
+            <td>Hello</td>
+            <td> 
+              <div class="mx-auto" style="width: 50px;">
+                <button class="text-center" (click)="saludos_sound('hello')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </td>
+            </tr>
+          <tr>
+            <td>¿Cómo estás? / Bien, gracias</td>
+            <td>How are you? / Fine, thanks</td>
+            <td> 
+              <div class="mx-auto" style="width: 50px;">
+                <button class="text-center" (click)="saludos_sound('jaguaryu')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </td>
+            </tr>
+          <tr>
+            <td>¿Qué tal?</td>
+            <td>How do you do?</td>
+            <td> 
+              <div class="mx-auto" style="width: 50px;">
+                <button class="text-center" (click)="saludos_sound('howdoyoudo')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </td>
+            </tr>
+          <tr>
+            <td>Buenos días</td>
+            <td>Good morning</td>
+            <td> 
+              <div class="mx-auto" style="width: 50px;">
+                <button class="text-center" (click)="saludos_sound('goodmorning')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </td>
+            </tr>
+          <tr>
+            <td>Buenas tardes</td>
+            <td>Good afternoon</td>
+            <td> 
+              <div class="mx-auto" style="width: 50px;">
+                <button class="text-center" (click)="saludos_sound('goodafternoon')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </td>
+            </tr>
+          <tr>
+            <td>Buenas noches*</td>
+            <td>Good evening</td>
+            <td> 
+              <div class="mx-auto" style="width: 50px;">
+                <button class="text-center" (click)="saludos_sound('goodevening')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </td>
+            </tr>
+          </tbody>
+        </table>
+        <hr>
+        <span class="first">Las despedidas</span>
+        <table class="table table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th >Español</th>
+              <th >Inglés</th>
+              <th >Sonido</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr>
-              <th>Español</th>
-              <th>Inglés</th>
-              </tr>
-            <tr>
-              <td>Hola</td>
-              <td>Hello</td>
-              </tr>
-            <tr>
-              <td>¿Cómo estás? / Bien, gracias</td>
-              <td>How are you? / Fine, thanks</td>
-              </tr>
-            <tr>
-              <td>¿Qué tal?</td>
-              <td>How do you do?</td>
-              </tr>
-            <tr>
-              <td>Buenos días</td>
-              <td>Good morning</td>
-              </tr>
-            <tr>
-              <td>Buenas tardes</td>
-              <td>Good afternoon</td>
-              </tr>
-            <tr>
-              <td>Buenas noches*</td>
-              <td>Good evening</td>
-              </tr>
-            <tr>
-              <td colspan="2"><a href="http://www.cursosgratisidiomas.com/wp-content/uploads/2010/05/09-saludos-ingles.mp3"><img title="escucha" src="http://www.cursosgratisidiomas.com/wp-content/uploads/2010/05/escucha.bmp" alt=""></a></td>
-              </tr>
-            </tbody>
-          </table>
-        <h3>Las despedidas en Inglés</h3>
-        <table>
-          <tbody>
-            <tr>
-              <th>Español</th>
-              <th>Inglés</th>
-              </tr>
             <tr>
               <td>Adios</td>
               <td>Bye / Good Bye / Bye Bye</td>
-              </tr>
+              <td> 
+                <div class="mx-auto" style="width: 50px;">
+                  <button class="text-center" (click)="saludos_sound('bye')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                  </button> 
+                </div>
+              </td>
+            </tr>
             <tr>
               <td>Hasta luego</td>
               <td>See you later</td>
-              </tr>
+              <td> 
+                <div class="mx-auto" style="width: 50px;">
+                  <button class="text-center" (click)="saludos_sound('seeyoulater')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                  </button> 
+                </div>
+              </td>
+            </tr>
             <tr>
               <td>Hasta pronto</td>
               <td>See you soon</td>
-              </tr>
+              <td> 
+                <div class="mx-auto" style="width: 50px;">
+                  <button class="text-center" (click)="saludos_sound('seeyousoon')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                  </button> 
+                </div>
+              </td>
+            </tr>
             <tr>
               <td>Hasta mañana</td>
               <td>See you tomorrow</td>
-              </tr>
-            <tr>
-              <td>Buenas noches*</td>
-              <td>Good night</td>
-              </tr>
-            <tr>
-              <td colspan="2"><a href="http://www.cursosgratisidiomas.com/wp-content/uploads/2010/05/10-saludos-ingles-2.mp3"><img title="escucha" src="http://www.cursosgratisidiomas.com/wp-content/uploads/2010/05/escucha.bmp" alt=""></a></td>
-              </tr>
+              <td> 
+                <div class="mx-auto" style="width: 50px;">
+                  <button class="text-center" (click)="saludos_sound('seeyoutomorrow')"><i class="fa fa-volume-up" aria-hidden="true"></i>
+                  </button> 
+                </div>
+              </td>
+            </tr>
             </tbody>
           </table>
-        <br>
-        <p><br>
-          </p>
-        <p>&nbsp;</p>
       </div>
-      </div>
-    <div>
-      <div onclick="javascript:repTds(7,'Giraffe,Lion,Wolf,Parrot,Butterfly,Monkey,Fly,Bat,Bear,Bird,Duck,Dog,Fish,Mouse,Fox',2)"></div>
-    </div>
     </div>
   <p><a href="Asaludos.html">ACTIVIDAD</a></p>
 </div>
