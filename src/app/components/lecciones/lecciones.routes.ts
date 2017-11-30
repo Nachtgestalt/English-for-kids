@@ -7,6 +7,7 @@ import { SaludosComponent } from './saludos/saludos.component';
 import { CuerpoComponent } from './cuerpo/cuerpo.component';
 import { CasaComponent } from './casa/casa.component';
 import { ComidaComponent } from './comida/comida.component';
+import { PresentacionLeccionesComponent } from './presentacion-lecciones/presentacion-lecciones.component';
 
 
 export const LECCIONES_ROUTES: Routes = [
@@ -18,5 +19,6 @@ export const LECCIONES_ROUTES: Routes = [
     {path: 'cuerpo', component: CuerpoComponent},
     {path: 'casa', component: CasaComponent},
     {path: 'comidas', component: ComidaComponent},
-    { path: '**', pathMatch: 'full', redirectTo: 'lecciones'}
+    {path: 'presentacion', component: PresentacionLeccionesComponent},
+    { path: '**', pathMatch: 'full', redirectTo: 'presentacion'}
 ];

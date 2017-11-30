@@ -8,6 +8,8 @@ import { VideosSaludosComponent } from './videos-saludos/videos-saludos.componen
 import { VideosCuerpoComponent } from './videos-cuerpo/videos-cuerpo.component';
 import { VideosCasaComponent } from './videos-casa/videos-casa.component';
 import { VideosComidasComponent } from './videos-comidas/videos-comidas.component';
+import { PresentacionVideosComponent } from './presentacion-videos/presentacion-videos.component';
+import { PresentacionActividadesComponent } from 'app/components/actividades/presentacion-actividades/presentacion-actividades.component';
 
 
 export const VIDEOS_ROUTES: Routes = [
@@ -19,5 +21,6 @@ export const VIDEOS_ROUTES: Routes = [
     { path: 'cuerpo', component: VideosCuerpoComponent },
     { path: 'casa', component: VideosCasaComponent },
     { path: 'comidas', component: VideosComidasComponent },
-    { path: '**', pathMatch: 'full', redirectTo: 'videos'}
+    { path: 'presentacion', component: PresentacionVideosComponent },
+    { path: '**', pathMatch: 'full', redirectTo: 'presentacion'}
 ];

@@ -1,0 +1,28 @@
+label > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+label > input + p{ /* IMAGE STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+}
+label > input:checked + p{ /* (RADIO CHECKED) IMAGE STYLES */
+    border:2px solid #f00;
+    font-size: 2rem;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+.respuesta{
+    font-size: 1.5rem;
+}
+
+.top-50{
+    margin-top: 50px;
+}
+
+.numeracion{
+    font-size: 1.5rem;
+}

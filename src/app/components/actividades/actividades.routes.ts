@@ -7,6 +7,7 @@ import { ActividadesSaludosComponent } from './actividades-saludos/actividades-s
 import { ActividadesCuerpoComponent } from './actividades-cuerpo/actividades-cuerpo.component';
 import { ActividadesCasaComponent } from './actividades-casa/actividades-casa.component';
 import { ActividadesComidasComponent } from './actividades-comidas/actividades-comidas.component';
+import { PresentacionActividadesComponent } from './presentacion-actividades/presentacion-actividades.component';
 
 export const ACTIVIDADES_ROUTES: Routes = [
     {path: 'animales', component: ActividadesAnimalesComponent},
@@ -17,5 +18,6 @@ export const ACTIVIDADES_ROUTES: Routes = [
     {path: 'cuerpo', component: ActividadesCuerpoComponent},
     {path: 'casa', component: ActividadesCasaComponent},
     {path: 'comidas', component: ActividadesComidasComponent},
-    { path: '**', pathMatch: 'full', redirectTo: 'activdades'}
+    {path: 'presentacion', component: PresentacionActividadesComponent},
+    { path: '**', pathMatch: 'full', redirectTo: 'presentacion'}
 ];

@@ -1,3 +1,173 @@
-<p>
-  actividades-comidas works!
-</p>
+<div id="aside" class="container-fluid">
+  <span class="first">ACTIVIDAD 8 - "COMIDAS"</span>
+  <p>De acuerdo a la imagen, selecciona la opcion correcta.</p>
+  <hr>
+  <form [formGroup]="formulario" id="needs-validation" class="mt-1" novalidate >
+    <div class="form-group row mt-2">
+      <div class="col-md-2">
+        <label class="numeracion">1.</label>
+        <button class="" (click)="comidas_sound('apple')">
+          <i class="text-center fa fa-volume-up fa-5x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question1" formControlName="question1" value="option1" checked>
+          <img src="../../../../assets/images/comida/apple.jpg" alt="apple">
+        </label>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question1" formControlName="question1" value="option2" checked>
+          <img src="../../../../assets/images/comida/pineapple.jpg" alt="pineapple">
+        </label>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question1" formControlName="question1" value="option3" checked>
+          <img src="../../../../assets/images/comida/lettuce.jpeg" alt="lettuce">           
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta1" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+    <hr>
+    <div class="form-group row mt-2">
+      <div class="col-md-2">
+        <label class="numeracion">2.</label>
+        <button class="" (click)="comidas_sound('grape')">
+          <i class="text-center fa fa-volume-up fa-5x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question2" formControlName="question2" value="option1" checked>
+          <img src="../../../../assets/images/comida/orange.jpg" alt="apple">           
+        </label>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question2" formControlName="question2" value="option2" checked>
+          <img src="../../../../assets/images/comida/cucumber.jpg" alt="pineapple">           
+        </label>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question2" formControlName="question2" value="option3" checked>
+          <img src="../../../../assets/images/comida/grape.jpg" alt="lettuce">           
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta2" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+
+    <hr>
+    <div class="form-group row mt-2">
+      <div class="col-md-2">
+        <label class="numeracion">3.</label>
+        <button class="" (click)="comidas_sound('onion')">
+          <i class="text-center fa fa-volume-up fa-5x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question3" formControlName="question3" value="option1" checked>
+          <img src="../../../../assets/images/comida/onion.jpg" alt="apple">           
+        </label>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question3" formControlName="question3" value="option2" checked>
+          <img src="../../../../assets/images/comida/tomato.jpg" alt="pineapple">           
+        </label>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question3" formControlName="question3" value="option3" checked>
+          <img src="../../../../assets/images/comida/peach.jpg" alt="lettuce">           
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta3" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+
+    <hr>
+    <div class="form-group row mt-2">
+      <div class="col-md-2">
+        <label class="numeracion">4.</label>
+        <button class="" (click)="comidas_sound('banana')">
+          <i class="text-center fa fa-volume-up fa-5x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question4" formControlName="question4" value="option1" checked>
+          <img src="../../../../assets/images/comida/pea.jpg" alt="apple">           
+        </label>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question4" formControlName="question4" value="option2" checked>
+          <img src="../../../../assets/images/comida/banana.jpg" alt="pineapple">           
+        </label>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question4" formControlName="question4" value="option3" checked>
+          <img src="../../../../assets/images/comida/greenbean.jpg" alt="lettuce">           
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta4" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+
+    <hr>
+    <div class="form-group row mt-2">
+      <div class="col-md-2">
+        <label class="numeracion">5.</label>
+        <button class="" (click)="comidas_sound('carrot')">
+          <i class="text-center fa fa-volume-up fa-5x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question5" formControlName="question5" value="option1" checked>
+          <img src="../../../../assets/images/comida/broccoli.jpg" alt="apple">           
+        </label>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question5" formControlName="question5" value="option2" checked>
+          <img src="../../../../assets/images/comida/carrot.jpg" alt="pineapple">           
+        </label>
+      </div>
+      <div class="col-md-2 text-center">
+        <label>
+          <input class="form-check-input" type="radio" name="question5" formControlName="question5" value="option3" checked>
+          <img src="../../../../assets/images/comida/celery.jpg" alt="lettuce" >           
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta5" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+
+    <div class="form-group row mt-3">
+      <button type="button" (click)="validar()" name="success" id="success" class="btn btn-primary btn-lg btn-block">Success</button>
+    </div>
+  </form>
+</div>

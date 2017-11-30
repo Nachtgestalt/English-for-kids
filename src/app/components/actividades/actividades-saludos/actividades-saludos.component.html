@@ -1,3 +1,107 @@
-<p>
-  actividades-saludos works!
-</p>
+<div id="aside" class="container-fluid">
+  <span class="first">ACTIVIDAD 5 - "SALUDOS Y DESPEDIDAS"</span>
+  <p>De acuerdo al audio presentado, selecciona la opcion correcta.</p>
+  <hr>
+  <form [formGroup]="formulario" id="needs-validation" class="mt-1" novalidate >
+    <div class="form-group row mt-2">
+      <div class="col-md-2">
+        <label class="numeracion">1.</label>
+        <button class="" (click)="saludos_sound('bye')">
+          <i class="text-center fa fa-volume-up fa-5x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="col-md-2 text-center">
+        <label (mouseenter)="saludos_sound('hello')">
+          <input class="form-check-input" type="radio" name="question1" formControlName="question1" value="option1" checked>
+          <p class="mx-auto">Hello</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="saludos_sound('bye')">
+          <input class="form-check-input" type="radio" name="question1" formControlName="question1" value="option2" checked>
+          <p class="mx-auto">Bye</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="saludos_sound('goodmorning')">
+          <input class="form-check-input" type="radio" name="question1" formControlName="question1" value="option3" checked>
+          <p class="mx-auto">Good morning</p>
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta1" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+    <hr>
+    <div class="form-group row mt-2">
+      <div class="col-md-2">
+        <label class="numeracion">2.</label>
+        <button class="" (click)="saludos_sound('goodafternoon')">
+          <i class="text-center fa fa-volume-up fa-5x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="col-md-2 text-center">
+        <label (mouseenter)="saludos_sound('goodafternoon')">
+          <input class="form-check-input" type="radio" name="question2" formControlName="question2" value="option1" checked>
+          <p class="mx-auto">Good afternoon</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="saludos_sound('goodevening')">
+          <input class="form-check-input" type="radio" name="question2" formControlName="question2" value="option2" checked>
+          <p class="mx-auto">Good evening</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="saludos_sound('goodmorning')">
+          <input class="form-check-input" type="radio" name="question2" formControlName="question2" value="option3" checked>
+          <p class="mx-auto">Good morning</p>
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta2" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+
+    <hr>
+    <div class="form-group row mt-2">
+      <div class="col-md-2">
+        <label class="numeracion">3.</label>
+        <button class="" (click)="saludos_sound('seeyousoon')">
+          <i class="text-center fa fa-volume-up fa-5x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="col-md-2 text-center">
+        <label (mouseenter)="saludos_sound('seeyousoon')">
+          <input class="form-check-input" type="radio" name="question3" formControlName="question3" value="option1" checked>
+          <p class="mx-auto">See you soon</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="saludos_sound('seeyoulater')">
+          <input class="form-check-input" type="radio" name="question3" formControlName="question3" value="option2" checked>
+          <p class="mx-auto">See you later</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="saludos_sound('seeyoutomorrow')">
+          <input class="form-check-input" type="radio" name="question3" formControlName="question3" value="option3" checked>
+          <p class="mx-auto">See you tomorrow</p>
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta3" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+
+    <div class="form-group row mt-3">
+      <button type="button" (click)="validar()" name="success" id="success" class="btn btn-primary btn-lg btn-block">Success</button>
+    </div>
+  </form>
+</div>

@@ -1,3 +1,220 @@
-<p>
-  actividades-numeros works!
-</p>
+<div id="aside" class="container-fluid">
+  <span class="first">ACTIVIDAD 3 "NUMEROS"</span>
+  <p>De acuerdo a la imagen selecciona el audio adecuado.</p>
+  <hr>
+  <form [formGroup]="formulario" #forma="ngForm">
+    <div class="form-group row">
+      <div class="col-md-4">
+        <label class="numeracion">1.</label>
+        <img src="../../../../assets/images/numeros/two.jpg" width="200" height="200" alt="jirafa">   
+      </div>
+      <div class="col-md-3">
+        <div class="form-check mt-4">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question1" value="option1" formControlName="question1" checked>
+            <div class="mx-auto ml-3" style="width: 100px;">
+              <button class="text-center" (click)="numeros_sound('3','question1','option1')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+              </button> 
+            </div>
+          </label>
+        </div>
+        <div class="form-check mt-4">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question1" value="option2" formControlName="question1" checked>
+            <div class="mx-auto ml-3" style="width: 100px;">
+              <button class="text-center" (click)="numeros_sound('2','question1','option2')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+              </button> 
+            </div>
+          </label>
+        </div>
+        <div class="form-check mt-4">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question1" value="option3" formControlName="question1" checked>
+            <div class="mx-auto ml-3" style="width: 100px;">
+              <button class="text-center" (click)="numeros_sound('5','question1','option3')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+              </button> 
+            </div>
+          </label>
+        </div>
+      </div>
+      <div [ngSwitch]="pregunta1" class="col-md-5">
+        <img *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" alt="">
+        <img *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+    <hr>
+
+    <div class="form-group row">
+      <div class="col-md-4">
+        <label class="numeracion">2.</label>
+        <img src="../../../../assets/images/numeros/five.jpg" width="200" height="200" alt="jirafa">   
+      </div>
+      <div class="col-md-3">
+        <div class="form-check mt-4">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question2" id="question11" formControlName="question2" value="option1" checked>
+            <div class="mx-auto ml-3" style="width: 100px;">
+              <button class="text-center" (click)="numeros_sound('5','question2','option1')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+              </button> 
+            </div>
+          </label>
+        </div>
+        <div class="form-check mt-4">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question2" id="question11" formControlName="question2" value="option2" checked>
+            <div class="mx-auto ml-3" style="width: 100px;">
+              <button class="text-center" (click)="numeros_sound('8','question2','option2')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+              </button> 
+            </div>
+          </label>
+        </div>
+        <div class="form-check mt-4">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question2" id="question11" formControlName="question2" value="option3" checked>
+            <div class="mx-auto ml-3" style="width: 100px;">
+              <button class="text-center" (click)="numeros_sound('6','question2','option3')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+              </button> 
+            </div>
+          </label>
+        </div>
+      </div>
+      <div [ngSwitch]="pregunta2" class="col-md-5">
+          <img *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" alt="">
+          <img *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" alt="">
+          <p *ngSwitchDefault>...</p>
+        </div>  
+    </div>
+    <hr>
+
+    <div class="form-group row">
+      <div class="col-md-4">
+        <label class="numeracion">3.</label>
+        <img src="../../../../assets/images/numeros/three.jpg" width="200" height="200" alt="jirafa">   
+      </div>
+      <div class="col-md-3">
+        <div class="form-check mt-4">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question3" id="question11" formControlName="question3" value="option1" checked>
+            <div class="mx-auto ml-3" style="width: 100px;">
+              <button class="text-center" (click)="numeros_sound('5','question3','option1')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+              </button> 
+            </div>
+          </label>
+        </div>
+        <div class="form-check mt-4">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question3" id="question11" formControlName="question3" value="option2" checked>
+            <div class="mx-auto ml-3" style="width: 100px;">
+              <button class="text-center" (click)="numeros_sound('9','question3','option2')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+              </button> 
+            </div>
+          </label>
+        </div>
+        <div class="form-check mt-4">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="question3" id="question11" formControlName="question3" value="option3" checked>
+            <div class="mx-auto ml-3" style="width: 100px;">
+              <button class="text-center" (click)="numeros_sound('3','question3','option3')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+              </button> 
+            </div>
+          </label>
+        </div>
+      </div>
+      <div [ngSwitch]="pregunta3" class="col-md-5">
+        <img *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" alt="">
+        <img *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+    <hr>
+
+    <div class="form-group row">
+        <div class="col-md-4">
+          <label class="numeracion">4.</label>
+          <img src="../../../../assets/images/numeros/nine.jpg" width="200" height="200" alt="jirafa">   
+        </div>
+        <div class="col-md-3">
+          <div class="form-check mt-4">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question4" id="question11" formControlName="question4" value="option1" checked>
+              <div class="mx-auto ml-3" style="width: 100px;">
+                <button class="text-center" (click)="numeros_sound('7','question4','option1')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </label>
+          </div>
+          <div class="form-check mt-4">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question4" id="question11" formControlName="question4" value="option2" checked>
+              <div class="mx-auto ml-3" style="width: 100px;">
+                <button class="text-center" (click)="numeros_sound('9','question4','option2')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </label>
+          </div>
+          <div class="form-check mt-4">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question4" id="question11" formControlName="question4" value="option3" checked>
+              <div class="mx-auto ml-3" style="width: 100px;">
+                <button class="text-center" (click)="numeros_sound('10','question4','option3')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </label>
+          </div>
+        </div>
+        <div [ngSwitch]="pregunta4" class="col-md-5">
+          <img *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" alt="">
+          <img *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" alt="">
+          <p *ngSwitchDefault>...</p>
+        </div>  
+      </div>
+    <hr>
+
+    <div class="form-group row">
+        <div class="col-md-4">
+          <label class="numeracion">5.</label>
+          <img src="../../../../assets/images/numeros/eight.jpg" width="200" height="200" alt="jirafa">   
+        </div>
+        <div class="col-md-3">
+          <div class="form-check mt-4">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question5" id="question11" formControlName="question5" value="option1" checked>
+              <div class="mx-auto ml-3" style="width: 100px;">
+                <button class="text-center" (click)="numeros_sound('1','question5','option1')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </label>
+          </div>
+          <div class="form-check mt-4">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question5" id="question11" formControlName="question5" value="option2" checked>
+              <div class="mx-auto ml-3" style="width: 100px;">
+                <button class="text-center" (click)="numeros_sound('2','question5','option2')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </label>
+          </div>
+          <div class="form-check mt-4">
+            <label class="form-check-label">
+              <input class="form-check-input" type="radio" name="question5" id="question11" formControlName="question5" value="option3" checked>
+              <div class="mx-auto ml-3" style="width: 100px;">
+                <button class="text-center" (click)="numeros_sound('8','question5','option3')"><i class="fa fa-volume-up fa-3x" aria-hidden="true"></i>
+                </button> 
+              </div>
+            </label>
+          </div>
+        </div>
+        <div [ngSwitch]="pregunta5" class="col-md-5">
+          <img *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" alt="">
+          <img *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" alt="">
+          <p *ngSwitchDefault>...</p>
+        </div>  
+      </div>
+
+      <div class="form-group row mt-4">
+        <button type="button" (click)="validar()" name="success" id="success" class="btn btn-primary btn-lg btn-block">Success</button>
+      </div>
+  </form>
+  
+</div>

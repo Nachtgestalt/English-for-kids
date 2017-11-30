@@ -1,3 +1,160 @@
-<p>
-  actividades-cuerpo works!
-</p>
+<div id="aside" class="container-fluid">
+  <span class="first">ACTIVIDAD 6 "PARTES DEL CUERPO"</span>
+  <p>De acuerdo a la imagen, selecciona la opcion correcta.</p>
+  <hr>
+  <form [formGroup]="formulario" id="needs-validation" class="mt-1" novalidate >
+    <div class="form-group row mt-2">
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">1.</label>
+        <img src="../../../../assets/images/cuerpo/tongue.jpg" width="150" height="159" alt="jirafa">
+      </div>
+      <div class="col-md-2 text-center">
+        <label (mouseenter)="cuerpo_sound('tongue')">
+          <input class="form-check-input" type="radio" name="question1" formControlName="question1" value="option1" checked>
+          <p class="mx-auto">Tongue</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="cuerpo_sound('nose')">
+          <input class="form-check-input" type="radio" name="question1" formControlName="question1" value="option2" checked>
+          <p class="mx-auto">Nose</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+          <label (mouseenter)="cuerpo_sound('foot')">
+            <input class="form-check-input" type="radio" name="question1" formControlName="question1" value="option3" checked>
+            <p class="mx-auto">Foot</p>
+          </label>
+        </div>
+      <div [ngSwitch]="pregunta1" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>
+    </div>
+    <hr>
+    <div class="form-group row top-50">
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">2.</label>
+        <img src="../../../../assets/images/cuerpo/eye.png" width="150" height="159" alt="jirafa">
+      </div>
+      <div class="col-md-2 text-center">
+        <label (mouseenter)="cuerpo_sound('chest')">
+          <input class="form-check-input" type="radio" name="question2" formControlName="question2" value="option1" checked>
+          <p class="mx-auto">Chest</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="cuerpo_sound('arm')">
+          <input class="form-check-input" type="radio" name="question2" formControlName="question2" value="option2" checked>
+          <p class="mx-auto">Arm</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="cuerpo_sound('eye')">
+          <input class="form-check-input" type="radio" name="question2" formControlName="question2" value="option3" checked>
+          <p class="mx-auto">Eye</p>
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta2" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+    <hr>
+    <div class="form-group row top-50">
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">3.</label>
+        <img src="../../../../assets/images/cuerpo/hand.jpg" width="150" height="159" alt="jirafa">
+      </div>
+      <div class="col-md-2 text-center">
+        <label (mouseenter)="cuerpo_sound('ear')">
+          <input class="form-check-input" type="radio" name="question3" formControlName="question3" value="option1" checked>
+          <p class="mx-auto">Ear</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="cuerpo_sound('hand')">
+          <input class="form-check-input" type="radio" name="question3" formControlName="question3" value="option2" checked>
+          <p class="mx-auto">Hand</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="cuerpo_sound('eyebrow')">
+          <input class="form-check-input" type="radio" name="question3" formControlName="question3" value="option3" checked>
+          <p class="mx-auto">Eyebrow</p>
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta3" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+    <hr>
+    <div class="form-group row top-50">
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">4.</label>
+        <img src="../../../../assets/images/cuerpo/tooth.jpg" width="150" height="159" alt="jirafa">
+      </div>
+      <div class="col-md-2 text-center">
+        <label (mouseenter)="cuerpo_sound('mouth')">
+          <input class="form-check-input" type="radio" name="question4" formControlName="question4" value="option1" checked>
+          <p class="mx-auto">Mouth</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="cuerpo_sound('tooth')">
+          <input class="form-check-input" type="radio" name="question4" formControlName="question4" value="option2" checked>
+          <p class="mx-auto">Tooth</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="cuerpo_sound('leg')">
+          <input class="form-check-input" type="radio" name="question4" formControlName="question4" value="option3" checked>
+          <p class="mx-auto">Leg</p>
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta4" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div>  
+    </div>
+    <hr>
+    <div class="form-group row top-50">
+      <div class="col-md-2">
+        <label for="exampleInputEmail1">5.</label>
+        <img src="../../../../assets/images/cuerpo/foot.jpg" width="150" height="159" alt="jirafa">
+      </div>
+      <div class="col-md-2 text-center">
+        <label (mouseenter)="cuerpo_sound('foot')">
+          <input class="form-check-input" type="radio" name="question5" formControlName="question5" value="option1" checked>
+          <p class="mx-auto">Foot</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="cuerpo_sound('arm')">
+          <input class="form-check-input" type="radio" name="question5" formControlName="question5" value="option2" checked>
+          <p class="mx-auto">Arm</p>
+        </label>
+      </div>
+      <div class="col-md-2">
+        <label (mouseenter)="cuerpo_sound('cheek')">
+          <input class="form-check-input" type="radio" name="question5" formControlName="question5" value="option3" checked>
+          <p class="mx-auto">Cheek</p>
+        </label>
+      </div>
+      <div [ngSwitch]="pregunta5" class="col-md-3 text-center" >
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'correcto'" src="../../../../assets/images/feliz.png" width="100" height="100" alt="">
+        <img class="img-responsive mx-auto" style="margin:0 auto;" *ngSwitchCase="'incorrecto'" src="../../../../assets/images/triste.png" width="100" height="100" alt="">
+        <p *ngSwitchDefault>...</p>
+      </div> 
+    </div>
+    <div class="form-group row mt-3">
+      <button type="button" (click)="validar()" name="success" id="success" class="btn btn-primary btn-lg btn-block">Success</button>
+    </div>
+  </form>
+</div>
+

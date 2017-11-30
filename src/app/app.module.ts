@@ -38,6 +38,10 @@ import { ActividadesSaludosComponent } from './components/actividades/actividade
 import { ActividadesCuerpoComponent } from './components/actividades/actividades-cuerpo/actividades-cuerpo.component';
 import { ActividadesCasaComponent } from './components/actividades/actividades-casa/actividades-casa.component';
 import { ActividadesComidasComponent } from './components/actividades/actividades-comidas/actividades-comidas.component';
+import {insertImport} from "@angular/cli/lib/ast-tools";
+import { PresentacionLeccionesComponent } from './components/lecciones/presentacion-lecciones/presentacion-lecciones.component';
+import { PresentacionActividadesComponent } from './components/actividades/presentacion-actividades/presentacion-actividades.component';
+import { PresentacionVideosComponent } from './components/videos/presentacion-videos/presentacion-videos.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +77,10 @@ import { ActividadesComidasComponent } from './components/actividades/actividade
     ActividadesSaludosComponent,
     ActividadesCuerpoComponent,
     ActividadesCasaComponent,
-    ActividadesComidasComponent
+    ActividadesComidasComponent,
+    PresentacionLeccionesComponent,
+    PresentacionActividadesComponent,
+    PresentacionVideosComponent
   ],
   imports: [
     BrowserModule,

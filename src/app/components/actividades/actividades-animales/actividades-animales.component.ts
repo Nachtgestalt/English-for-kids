@@ -47,7 +47,6 @@ export class ActividadesAnimalesComponent implements OnInit {
       if(data === 'giraffe'){
         this.color1 = 'green'
         this.formulario.controls['respuesta1'].setValue('Correcto!');
-        
       } else {
         this.color1 = 'red'
         this.formulario.controls['respuesta1'].setValue('Incorrecto!');
